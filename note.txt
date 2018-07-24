@@ -12,3 +12,6 @@ Tip 3：
 使用命令git log，显示从最近到最远的提交日志（可以使用--pretty =oneline参数来使的输出信息更简洁）
 使用命令git reset --hard HEAD^（在Windows的命令行下^需要加上双引号），回退到上一个版本是HEAD^，回退到上上一个版本是HEAD^^，回退到往上n个版本是HEAD~n。需要进到最新的某个版本，需要找到这个版本对应的commit id，命令是git reset --hard <commit id>。
 使用命令git reflog，用来记录你的每一次命令。
+
+Tip 4:
+理解Git的暂存区stage
