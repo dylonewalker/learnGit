@@ -15,3 +15,11 @@ Tip 3：
 
 Tip 4:
 理解Git的暂存区stage
+
+Tip 5:
+使用命令git diff HEAD -- <修改的文件>，查看工作区和暂存区的区别
+
+Tip 6:
+使用命令git checkout -- <file>，把文件在工作区的修改全部删掉，让这个文件回到最近一次git commit或git add时的状态。
+当使用git add命令将文件送进暂存区后，要修改可以使用命令git reset HEAD <file>把暂存区的修改撤销掉（unstage），重新放回工作区。
+当我们使用HEAD时，表示最新的版本。
