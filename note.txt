@@ -46,3 +46,7 @@ Tip 11:
 使用命令git checkout <分支名>，用于切换到分支
 使用命令git merge <分支名>，用于合并指定分支到当前分支
 使用命令git branch -d <分支名>，用于删除不使用的分支。
+
+Tip 12：
+当创建了一个分支后，会出现分支和master线同时修改了同一个文件的情况。当我们使用命令git merge <分支>时，会出现confict，这个时候我们需要修改文件里的冲突后，
+继续add和commit，才能解决冲突。可以使用命令git log --graph --pretty=oneline --abbrev-commit，查看分支合并图
