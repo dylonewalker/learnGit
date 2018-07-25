@@ -38,3 +38,7 @@ Tip 9：
 Tip 10：
 从远程库上拉取项目，使用命令git clone git@github.com:dylonewalker/gitSkills.git.
 Git支持多种协议，包括https，但通过ssh支持的原生git协议速度最快。
+
+Tip 11:
+使用命令git checkout -b dev,创建dev分支，然后切换到dev分支。git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：git branch dev/git checkout dev
+使用命令git branch,查看当前分支，git branch命令会列出所有分支，当前分支前面会标一个*号。
