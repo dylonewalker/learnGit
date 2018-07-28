@@ -62,3 +62,6 @@ Tip 13：
 使用命令git stash,将当前的工作现场（也就是分支）进行保存.
 通过Git的分支管理来快速地保存正在工作的区域，可以随时调出去解决master上出现的bug。出现了bug首先创建一个分支issue-101，
 解决掉bug后，切换到master上，通过使用命令git merge --no-ff -m “修改的内容” <分支名>，来完成合并，并删除issue-101分支。
+修改完bug后，要切换到刚才还未完成的分支工作中，首先切换到刚才的分支，然后使用命令git stash list来查看当前分支的状态，
+然后恢复刚才的工作，使用命令git stash pop，该命令会恢复到刚才的工作，同时删除掉stash存储记录。
+你可以多次stash，恢复的时候，先用git stash list查看，然后恢复指定的stash，用命令：git stash apply stash@{0}
