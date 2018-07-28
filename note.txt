@@ -11,7 +11,8 @@ Tip 2:
 Tip 3：
 使用命令git log，显示从最近到最远的提交日志（可以使用--pretty =oneline参数来使的输出信息更简洁）
 使用命令git reset --hard HEAD^（在Windows的命令行下^需要加上双引号），回退到上一个版本是HEAD^，
-回退到上上一个版本是HEAD^^，回退到往上n个版本是HEAD~n。需要进到最新的某个版本，需要找到这个版本对应的commit id，命令是git reset --hard <commit id>。
+回退到上上一个版本是HEAD^^，回退到往上n个版本是HEAD~n。需要进到最新的某个版本，需要找到这个版本对应的commit id，
+命令是git reset --hard <commit id>。
 使用命令git reflog，用来记录你的每一次命令。
 
 Tip 4:
@@ -56,3 +57,8 @@ Tip 12：
 当创建了一个分支后，会出现分支和master线同时修改了同一个文件的情况。当我们使用命令git merge <分支>时，会出现confict，
 这个时候我们需要修改文件里的冲突后，继续add和commit，才能解决冲突。
 使用命令git log --graph --pretty=oneline --abbrev-commit，查看分支合并图
+
+Tip 13：
+使用命令git stash,将当前的工作现场（也就是分支）进行保存.
+通过Git的分支管理来快速地保存正在工作的区域，可以随时调出去解决master上出现的bug。出现了bug首先创建一个分支issue-101，
+解决掉bug后，切换到master上，通过使用命令git merge --no-ff -m “修改的内容” <分支名>，来完成合并，并删除issue-101分支。
